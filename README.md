@@ -42,7 +42,7 @@ fetchJSON('/user/posts').then(
 ```
 
 ## API リファレンス
-[Reference.md](./Reference.md)
+[reference.md](./reference.md)
 
 ## テストの実行
 * Node.js でテストするには`npm test`を実行する
