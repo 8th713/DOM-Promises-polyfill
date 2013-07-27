@@ -1,0 +1,40 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+  <link rel="stylesheet" href="../node_modules/mocha/mocha.css">
+</head>
+<body>
+  <div id="mocha"></div>
+  <script src="../node_modules/mocha/mocha.js"></script>
+  <script src="../node_modules/sinon/pkg/sinon.js"></script>
+  <script src="lib/chai.js"></script>
+  <script>
+    var assert = chai.assert;
+    mocha.setup({
+      timeout: 200,
+      slow: Infinity,
+      ui: 'bdd'
+    })
+  </script>
+
+  <script src="../src/Promise.js"></script>
+
+  <script src="DOM-Promisep-tests/helpers/utli.js"></script>
+  <script src="DOM-Promisep-tests/1.1.1.Constructor.js"></script>
+  <script src="DOM-Promisep-tests/1.2.1.promise.than.js"></script>
+  <script src="DOM-Promisep-tests/1.2.2.promise.catch.js"></script>
+  <script src="DOM-Promisep-tests/1.3.1.resolver.fulfill.js"></script>
+  <script src="DOM-Promisep-tests/1.3.2.resolver.resolve.js"></script>
+  <script src="DOM-Promisep-tests/1.3.3.resolver.reject.js"></script>
+  <script src="DOM-Promisep-tests/2.Promise.fulfill.js"></script>
+  <script src="DOM-Promisep-tests/3.Promise.resolve.js"></script>
+  <script src="DOM-Promisep-tests/4.Promise.reject.js"></script>
+  <script src="DOM-Promisep-tests/5.Promise.any.js"></script>
+  <script src="DOM-Promisep-tests/6.Promise.every.js"></script>
+  <script src="DOM-Promisep-tests/7.Promise.some.js"></script>
+  <script>
+    mocha.run();
+  </script>
+</body>
+</html>

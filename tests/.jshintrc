@@ -1,0 +1,24 @@
+{
+  "curly": true,
+  "indent": 2,
+  "undef": true,
+  "unused": true,
+
+  "boss": true,
+  "eqnull": true,
+  "es5": true,
+  "regexdash": true,
+  "sub": true,
+  "validthis": true,
+
+  "browser": true,
+  "node": true,
+
+  "globals": {
+    "Promise": false,
+    "describe": false,
+    "beforeEach": false,
+    "specify": false,
+    "chai": false
+  }
+}
